@@ -11,8 +11,8 @@ _Invariant: If the target value X is present in the array, then the target value
 
 
 Implementation: A standard Binary Search algo has two implementations:
-'''
-1. [left, right)
+```
+# 1. [left, right)
 def binary_search(nums, target):
     low, high = 0, len(nums)
     while low < high:
@@ -25,7 +25,7 @@ def binary_search(nums, target):
             high = mid
     return -1
 
-2. [left, right]
+# 2. [left, right]
 def binary_search(nums, target):
     low, high = 0, len(nums) - 1
     while low <= high:
@@ -37,4 +37,4 @@ def binary_search(nums, target):
         else:
             high = mid - 1
     return -1
-'''
+```
