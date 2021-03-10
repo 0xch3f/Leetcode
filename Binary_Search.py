@@ -8,6 +8,6 @@ Invariant: If the target value X is present in the array, then the target value 
 
 """
 
-![image](https://github.com/yeesunch/Leetcode/blob/master/Images/binary_search.jpg?raw=true)
+![image](https://github.com/yeesunch/Leetcode/blob/master/Images/binary_search.jpg)
 
 # Implementation: A standard Binary Search algo has two implementations:
