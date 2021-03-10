@@ -3,7 +3,7 @@ Created on Tue Mar  9 19:10:04 2021
 
 @author: yeesun
 
-Invariant: If the target value X is present in the array, then the target value is present in the current range
+_Invariant: If the target value X is present in the array, then the target value is present in the current range_
 
 """
 
@@ -11,3 +11,30 @@ Invariant: If the target value X is present in the array, then the target value 
 
 
 Implementation: A standard Binary Search algo has two implementations:
+'''
+1. [left, right)
+def binary_search(nums, target):
+    low, high = 0, len(nums)
+    while low < high:
+        mid = low + (high - low) // 2
+        if target == nums[mid]:
+            return mid
+        elif target > nums[mid]:
+            low = mid + 1
+        else:
+            high = mid
+    return -1
+
+2. [left, right]
+def binary_search(nums, target):
+    low, high = 0, len(nums) - 1
+    while low <= high:
+        mid = low + (high - low) // 2
+        if target == nums[mid]:
+            return mid
+        elif target > nums[mid]:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return -1
+'''
