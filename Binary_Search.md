@@ -9,7 +9,8 @@ _Invariant: If the target value X is present in the array, then the target value
 
 <img src="https://github.com/yeesunch/Leetcode/blob/master/Images/binary_search.jpg" width="600" height="300"/><br/>
 
-Implementation: A standard Binary Search algo has two implementations:
+---
+Implementation: A standard Binary Search algo has two implementations: 
 ```
 # 1. [left, right)
 def binary_search(nums, target):
@@ -39,12 +40,16 @@ def binary_search(nums, target):
 ```
 
 
+
+---
 Python Bisect
 
-bisect_left     |     bisect_right
-<       >=      |     <=      >
-low     high    |     low     high
-(since we update low and high by low = mid + 1 & high = mid)
+|bisect|left|  |bisect|right| 
+:-:|:-:|:-:|:-:|:-:
+|<|>=| |<=|>|
+|low|high| |low|high| 
+
+(since we update low and high by low = mid + 1 & high = mid)  
 
 ```
 # 1. Bisect left - Find the lower bound of >= target
