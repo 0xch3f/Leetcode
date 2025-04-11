@@ -1,7 +1,7 @@
 """
 Created on Tue Mar  9 19:10:04 2021
 
-@author: yeesun
+@author: 0xch3f
 
 _Invariant: If the target value X is present in the array, then the target value is present in the current range_
 
